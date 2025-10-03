@@ -54,36 +54,51 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="toddlerfoveation_stop()" onmouseover="toddlerfoveation_start()">
+
+    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <img src='images/toddlerfoveation.jpg' width="160">
+          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/bolt3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/bolt3d.jpg' width="160">
         </div>
         <script type="text/javascript">
-            function toddlerfoveation_start() {
-                document.getElementById('toddlerfoveation_image').style.opacity = "1";
-            }
+          function bolt3d_start() {
+            document.getElementById('bolt3d_image').style.opacity = "1";
+          }
 
-            function toddlerfoveation_stop() {
-                document.getElementById('toddlerfoveation_image').style.opacity = "0";
-            }
-            toddlerfoveation_stop()
+          function bolt3d_stop() {
+            document.getElementById('bolt3d_image').style.opacity = "0";
+          }
+          bolt3d_stop()
         </script>
       </td>
-      <td style="...">
-        <span class="papertitle">Simulated Cortical Magnification Supports Self-Supervised Object Learning</span>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://szymanowiczs.github.io/bolt3d">
+          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
+        </a>
         <br>
-        <strong>Zhengyang Yu</strong>,
-        <a href="https://aubret.github.io/">Aubret Arthur</a>,
-        <a href="https://liberalarts.utexas.edu/psychology/faculty/cy2856">Chen Yu</a>,
-        <a href="https://www.fias.science/en/fellows/detail/triesch-jochen/">Jochen Triesch</a>
+        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
+        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
+        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
+        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
+        <a href="https://holynski.org">Aleksander Holynski</a>,
+        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
+		<strong>Jonathan T. Barron</strong>,
+        <a href="https://henzler.github.io">Philipp Henzler</a>
         <br>
-        <em>ICDL</em>, 2025
+        <em>ICCV</em>, 2025
         <br>
-            <a href="https://arxiv.org/pdf/2509.15751">paper</a>
-         <p></p>
+        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
+        /
+        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+        <p></p>
         <p>
-            We trained self-supervised learning models and found that cortical magnification supports self-supervised object learning.
+		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
         </p>
       </td>
     </tr>
@@ -110,7 +125,9 @@
         </script>
       </td>
       <td style="...">
-        <span class="papertitle">Toddlers' Active Gaze Behavior Supports Self-Supervised Object Learning</span>
+        <a href="https://arxiv.org/pdf/2411.01969?">
+          <span class="papertitle">Toddlers' Active Gaze Behavior Supports Self-Supervised Object Learning</span>
+        </a>
         <br>
         <strong>Zhengyang Yu</strong>,
         <a href="https://aubret.github.io/">Aubret Arthur</a>,
@@ -121,7 +138,7 @@
         <br>
         <em>PNAS</em> (under review)
         <br>
-          <a href="https://arxiv.org/pdf/2411.01969?">paper</a>
+          <a href="https://arxiv.org/pdf/2411.01969?">arxiv</a>
           /
           <a href="https://github.com/jestland/infantVision">code</a>
         <p></p>
@@ -134,34 +151,49 @@
 
 
 
-    <tr onmouseout="cre_stop()" onmouseover="cre_start()">
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <img src='images/cre.jpg' width="160">
+          <div class="two" id='ever_image'>
+					  <img src='images/ever_after.png' width=100%>
+					</div>
+          <img src='images/ever_before.png' width=100%>
         </div>
         <script type="text/javascript">
-            function cre_start() {
-                document.getElementById('cre_image').style.opacity = "1";
-            }
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
 
-            function cre_stop() {
-                document.getElementById('cre_image').style.opacity = "0";
-            }
-            cre_stop()
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
         </script>
       </td>
-      <td style="...">
-        <span class="papertitle">Cre: Circle relationship embedding of patches in vision transformerCCF None</span>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://half-potato.gitlab.io/posts/ever/">
+			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+</span>
+        </a>
         <br>
-        <strong>Zhengyang Yu</strong>,
-        <a href="https://www.fias.science/en/fellows/detail/triesch-jochen/">Jochen Triesch</a>
+				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
+        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
+        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
+				<strong>Jonathan T. Barron</strong>,
+        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<br>
+        <em>ICCV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
         <br>
-        <em>ESANN</em>, 2023
-        <br>
-            <a href="https://www.esann.org/sites/default/files/proceedings/2023/ES2023-75.pdf">paper</a>
-         <p></p>
+        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <p></p>
         <p>
-            A novel foveation-inspired positional encoding for ViTs that reduces the number of learnable parameters.
+				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
         </p>
       </td>
     </tr>
