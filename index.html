@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Jon Barron</title>
+    <title>Zhengyang Yu</title>
 
     <meta name="author" content="Zhengyang Yu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,6 +103,54 @@
       </td>
     </tr>
 
+    <tr onmouseout="toddlergaze_stop()" onmouseover="toddlergaze_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='toddlergaze_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/toddlergaze.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/toddlergaze.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+            function toddlergaze_start() {
+                document.getElementById('toddlergaze_image').style.opacity = "1";
+            }
+
+            function toddlergaze_stop() {
+                document.getElementById('toddlergaze_image').style.opacity = "0";
+            }
+            toddlergaze_stop()
+        </script>
+      </td>
+      <td style="...">
+        <a href="https://arxiv.org/pdf/2411.01969?">
+          <span class="papertitle">Toddlers' Active Gaze Behavior Supports Self-Supervised Object Learning</span>
+        </a>
+        <br>
+        <strong>Zhengyang Yu</strong>,
+        <a href="https://aubret.github.io/">Aubret Arthur</a>,
+        <a href="https://scholar.google.com/citations?user=pgFBKQ4AAAAJ&hl=de">Marcel C. Raabe</a>,
+        <a href="https://scholar.google.com/citations?user=HY5TCCkAAAAJ&hl=en">Jane Yang</a>,
+        <a href="https://liberalarts.utexas.edu/psychology/faculty/cy2856">Chen Yu</a>,
+        <a href="https://www.fias.science/en/fellows/detail/triesch-jochen/">Jochen Triesch</a>
+        <br>
+        <em>PNAS</em>, 2025 (under review)
+        <br>
+          <a href="https://arxiv.org/pdf/2411.01969?">arxiv</a>
+          /
+          <a href="https://github.com/jestland/infantVision">code</a>
+        <p></p>
+        <p>
+        We constructed a series of egocentric toddler gaze datasets and demonstrated, through representation learning,
+            that toddlers' gaze behavior supports self-supervised object learning.
+        </p>
+      </td>
+    </tr>
+
+
+
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -149,6 +197,9 @@
         </p>
       </td>
     </tr>
+
+
+
 
           </tbody></table>
 
